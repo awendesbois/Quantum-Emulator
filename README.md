@@ -8,10 +8,13 @@ This project is seprarate in 2 parts:
 
 1- The "System.py" file:
 This file contain the class System which contain all the following gates:
-        H
-        X  |  CX
-        Y  |  CY
-        Z  |  CZ
+        H qubit
+        X qubit
+        Y qubit
+        Z qubit
+        CX qubit_control qubit_target
+        CY qubit_control qubit_target
+        CZ qubit_control qubit_target
 
 2- The "tests.txt" file:
 This file contain a simple circuit to create a GHZ State: 
@@ -33,4 +36,4 @@ This file contain a simple circuit to create a GHZ State:
 ## Output
 The output is the amplitude & phase of each state of the circuit.
 
-Example : "State: |000> - Amplitude: [0.+0.j] - Phase: [0.]"
+Example : "State: |001> - Amplitude: [0.+0.j] - Phase: [0.]"

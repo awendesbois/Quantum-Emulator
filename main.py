@@ -45,20 +45,8 @@ def analyse_line(word, Syst):
     else:
         print(f"ERROR! -> Unknown command: {word[0]}")
 
-
-def main(filename):
-    Syst = System(0)
+def print_graph(number_of_shots, Syst):
     
-    with open(filename, 'r') as file:
-        lines = file.readlines()
-
-        for l in lines:
-            word = l.strip().split()                
-            analyse_line(word, Syst)
-        
-            Syst.printSyst()
-            
-    number_of_shots=1000
     mesures = Syst.measure(number_of_shots)
     x = [i for i in range(number_of_shots)]
     
@@ -70,6 +58,21 @@ def main(filename):
     plt.ylabel("Axe des y")
     plt.grid(True)
     plt.show()
+    
+def main(filename):
+    Syst = System(0)
+    
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+
+        for l in lines:
+            word = l.strip().split()                
+            analyse_line(word, Syst)
+        
+            Syst.printSyst()
+          
+    number_of_shots=1000      
+    #print_graph(number_of_shots, Syst)
             
             
             

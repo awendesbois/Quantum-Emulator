@@ -2,7 +2,7 @@ import numpy as np
 import math
 import copy
 
-        
+
         
 class System:
     def __init__(self, n):
@@ -82,10 +82,7 @@ class System:
                 res2 = np.kron(res2, I2)
                     
         res = res1 + res2
-
         self.amplitudes = res@self.amplitudes 
-        
-        #Problem for multiple controled Qbits 
         
             
     def execute_h(self, target):
