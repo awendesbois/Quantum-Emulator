@@ -6,8 +6,7 @@ This project is a quantum emulator. It has to emulate a quantum circuit using us
 
 This project is seprarate in 2 parts:
 
-1- The "System.py" file:  
-This file contain the class System which contain all the following gates:  
+1- The "System.py" file: This file contain the class System which contain all the following gates:  
         H qubit  
         X qubit  
         Y qubit  
@@ -16,8 +15,7 @@ This file contain the class System which contain all the following gates:
         CY qubit_control qubit_target  
         CZ qubit_control qubit_target  
 
-2- The "tests.txt" file:  
-This file contain a simple circuit to create a GHZ State:  
+2- The "tests.txt" file: This file contain a simple circuit to create a GHZ State:  
         1/sqrt(2)(|000> + |111>)
 
 ## Usage
